@@ -1,0 +1,1 @@
+export const CUSTOM_PRIVATE_KEY = 'CUSTOM_PRIVATE_KEY'
