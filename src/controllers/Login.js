@@ -1,8 +1,8 @@
-import jwt from "jsonwebtoken";
-import { CUSTOM_PRIVATE_KEY } from "../auth/private_key.js";
-import User from "../models/User.js";
+jwt = require("jsonwebtoken");
+CUSTOM_PRIVATE_KEY = require("../auth/private_key.js");
+User= require("../models/User.js");
 
-export const Login = {
+module.exports = Login = {
     login: async (req, res) => {
         User.findOne({ pseudo: req.body.username } )
             .then((user) => {

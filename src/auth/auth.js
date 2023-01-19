@@ -1,8 +1,8 @@
-import jwt from 'jsonwebtoken'
-import {CUSTOM_PRIVATE_KEY} from '../auth/private_key.js';
+jwt = require('jsonwebtoken')
+CUSTOM_PRIVATE_KEY = require('../auth/private_key.js');
 
 
-export default (req, res, next) => {
+module.exports =  (req, res, next) => {
     const authorizationHeader = req.headers.authorization
 
     if (!authorizationHeader) {

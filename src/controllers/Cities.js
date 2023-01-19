@@ -1,6 +1,6 @@
-import City from '../models/City.js'
+City = require('../models/City.js');
 
-const Cities = {
+Cities = {
   getAll: async (req, res) => {
     try {
       const cities = await City.find();
@@ -23,4 +23,4 @@ const Cities = {
   }
 }
 
-export default Cities;
+module.exports = Cities;

@@ -1,5 +1,5 @@
-import User from "../models/User.js";
-import City from "../models/City.js";
+User = require("../models/User.js");
+City = require("../models/City.js");
 
 const Users = {
   getAll: async (req, res) => {
@@ -36,4 +36,4 @@ const Users = {
   } 
 };
 
-export default Users;
+module.exports =  Users;

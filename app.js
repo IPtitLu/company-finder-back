@@ -1,13 +1,12 @@
-import express from "express";
+express = require("express");
 const app = express();
-import mongoose from "mongoose";
-import Cities from "./src/controllers/Cities.js";
-import Users from "./src/controllers/Users.js";
-import { Login } from "./src/controllers/Login.js";
-import bodyParser from "body-parser";
-import auth from "./src/auth/auth.js";
-import esm from "esm";
-import cors from "cors";
+mongoose = require("mongoose");
+Cities= require("./src/controllers/Cities.js");
+Users= require("./src/controllers/Users.js");
+Login= require("./src/controllers/Login.js");
+bodyParser= require("body-parser");
+auth = require("./src/auth/auth.js");
+cors = require("cors");
 
 app.use(bodyParser.json());
 app.use(cors());
