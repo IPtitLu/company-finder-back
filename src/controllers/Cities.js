@@ -10,9 +10,9 @@ const Cities = {
     }
   },
   getOne: async (req, res) => {
-    const code = req.params.code;
+    const name = req.params.name;
     try {
-      const city = await City.findOne({ postalCode: code } )
+      const city = await City.findOne({ name: name } )
       if (!city) {
         return res.status(404).send({ error: "City not found" });
       }

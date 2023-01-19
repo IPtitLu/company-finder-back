@@ -24,7 +24,7 @@ mongoose
     .catch((err) => console.log(err));
 
 app.get("/cities",  Cities.getAll);
-app.get("/cities/:code" , Cities.getOne);
+app.get("/cities/:name" , Cities.getOne);
 app.get("/users",  Users.getAll);
 app.get("/users/:id", Users.getOne);
 app.get("/users_by_username/:username", Users.getByUsername)
