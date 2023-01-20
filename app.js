@@ -13,7 +13,7 @@ app.use(cors());
 
 mongoose
     .connect(
-        "mongodb+srv://YNOV:1234@cluster0.58uovvk.mongodb.net/?retryWrites=true&w=majority",
+        "mongodb+srv://devuser:1234@clustercompanyfinder.zclfgfz.mongodb.net/?retryWrites=true&w=majority",
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
